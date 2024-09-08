@@ -1,0 +1,549 @@
+
+Model package chspec successfully loaded.
+XSPEC12>cpd /xs
+XSPEC12>data 1:1 /mnt/c/Users/User/Downloads/ch2_xsm_20240212_8_spec.pha{1}
+***Error: Requested ARF extension not found in ch2_xsm_20240212_8_spec.arf
+
+1 spectrum  in use
+
+Spectral Data File: /mnt/c/Users/User/Downloads/ch2_xsm_20240212_8_spec.pha{1}  Spectrum 1
+Net count rate (cts/s) for Spectrum:1  5.191e+04 +/- 2.742e+02
+ Assigned to Data Group 1 and Plot Group 1
+  Noticed Channels:  1-512
+  Telescope: CH-2_ORBITER Instrument: CH2_XSM  Channel Type: PI
+  Exposure Time: 120 sec
+ Using fit statistic: chi
+ Using Response (RMF) File            /home/soumya/xsmdas_directory/xsmdas/caldb/CH2xsmresponse20200423v01.rmf for Source 1
+
+XSPEC12>arf /mnt/c/Users/User/Downloads/ch2_xsm_20240212_8_spec.arf{1}
+Arf successfully loaded.
+XSPEC12>setplot energy
+XSPEC12>ignore **:**-2.8 12.0-**
+    70 channels (1-70) ignored in spectrum #     1
+   164 channels (349-512) ignored in spectrum #     1
+
+XSPEC12>model chisoth
+
+Input parameter value, delta, min, bot, top, and max values for ...
+           6.39       0.01(    0.0639)          6          6        7.7        7.7
+1:chisoth:logT>
+           10.9     -0.001(     0.109)          9          9         11         11
+2:chisoth:He>
+           1.64     -0.001(    0.0164)          1          1          2          2
+3:chisoth:Li>
+           1.94     -0.001(    0.0194)          1          1          2          2
+4:chisoth:Be>
+           3.09     -0.001(    0.0309)        1.5        1.5        3.5        3.5
+5:chisoth:B>
+           8.59     -0.001(    0.0859)          7          7         10         10
+6:chisoth:C>
+              8     -0.001(      0.08)          7          7        8.5        8.5
+7:chisoth:N>
+           8.89     -0.001(    0.0889)          8          8          9          9
+8:chisoth:O>
+           4.56     -0.001(    0.0456)        3.5        3.5          5          5
+9:chisoth:F>
+           8.08      -0.01(    0.0808)        7.1        7.1        8.5        8.5
+10:chisoth:Ne>
+           6.93     -0.001(    0.0693)        6.1        6.1        7.2        7.2
+11:chisoth:Na>
+           8.15      -0.01(    0.0815)          5          5       10.6       10.6
+12:chisoth:Mg>
+           7.04      -0.01(    0.0704)          4          4        9.5        9.5
+13:chisoth:Al>
+            8.1      -0.01(     0.081)          5          5       10.6       10.6
+14:chisoth:Si>
+           5.45     -0.001(    0.0545)          5          5          6          6
+15:chisoth:P>
+           7.27      -0.01(    0.0727)          5          5         10         10
+16:chisoth:S>
+            5.5     -0.001(     0.055)          5          5          6          6
+17:chisoth:Cl>
+           6.58     -0.001(    0.0658)          4          4         10         10
+18:chisoth:Ar>
+           5.67     -0.001(    0.0567)          5          5          6          6
+19:chisoth:K>
+           6.93     -0.001(    0.0693)        3.8        3.8          9          9
+20:chisoth:Ca>
+           3.71     -0.001(    0.0371)        2.5        2.5          4          4
+21:chisoth:Sc>
+           5.56     -0.001(    0.0556)        4.5        4.5          6          6
+22:chisoth:Ti>
+           4.54     -0.001(    0.0454)        3.5        3.5          5          5
+23:chisoth:V>
+           6.21     -0.001(    0.0621)          5          5          7          7
+24:chisoth:Cr>
+           5.93     -0.001(    0.0593)        5.2        5.2        6.5        6.5
+25:chisoth:Mn>
+            8.1      -0.01(     0.081)          7          7        8.5        8.5
+26:chisoth:Fe>
+           5.46     -0.001(    0.0546)        4.3        4.3          6          6
+27:chisoth:Co>
+           6.84      -0.01(    0.0684)        6.2        6.2        9.8        9.8
+28:chisoth:Ni>
+           4.75     -0.001(    0.0475)        3.5        3.5        5.5        5.5
+29:chisoth:Cu>
+           5.14     -0.001(    0.0514)        4.2        4.2        5.8        5.8
+30:chisoth:Zn>
+              1       0.01(      0.01)          0          0      1e+20      1e+24
+31:chisoth:norm>
+
+========================================================================
+Model chisoth<1> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   chisoth    logT       K        6.39000      +/-  0.0
+   2    1   chisoth    He                  10.9000      frozen
+   3    1   chisoth    Li                  1.64000      frozen
+   4    1   chisoth    Be                  1.94000      frozen
+   5    1   chisoth    B                   3.09000      frozen
+   6    1   chisoth    C                   8.59000      frozen
+   7    1   chisoth    N                   8.00000      frozen
+   8    1   chisoth    O                   8.89000      frozen
+   9    1   chisoth    F                   4.56000      frozen
+  10    1   chisoth    Ne                  8.08000      frozen
+  11    1   chisoth    Na                  6.93000      frozen
+  12    1   chisoth    Mg                  8.15000      frozen
+  13    1   chisoth    Al                  7.04000      frozen
+  14    1   chisoth    Si                  8.10000      frozen
+  15    1   chisoth    P                   5.45000      frozen
+  16    1   chisoth    S                   7.27000      frozen
+  17    1   chisoth    Cl                  5.50000      frozen
+  18    1   chisoth    Ar                  6.58000      frozen
+  19    1   chisoth    K                   5.67000      frozen
+  20    1   chisoth    Ca                  6.93000      frozen
+  21    1   chisoth    Sc                  3.71000      frozen
+  22    1   chisoth    Ti                  5.56000      frozen
+  23    1   chisoth    V                   4.54000      frozen
+  24    1   chisoth    Cr                  6.21000      frozen
+  25    1   chisoth    Mn                  5.93000      frozen
+  26    1   chisoth    Fe                  8.10000      frozen
+  27    1   chisoth    Co                  5.46000      frozen
+  28    1   chisoth    Ni                  6.84000      frozen
+  29    1   chisoth    Cu                  4.75000      frozen
+  30    1   chisoth    Zn                  5.14000      frozen
+  31    1   chisoth    norm                1.00000      +/-  0.0
+________________________________________________________________________
+
+Rebinning table to response energy bins: NEW NBINS 3000 OLD NBINS 0
+
+Fit statistic  : Chi-Squared                171227.0     using 278 bins.
+
+Test statistic : Chi-Squared                171227.0     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 276 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>thaw 18
+
+Fit statistic  : Chi-Squared                171227.0     using 278 bins.
+
+Test statistic : Chi-Squared                171227.0     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 275 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>thaw 20
+
+Fit statistic  : Chi-Squared                171227.0     using 278 bins.
+
+Test statistic : Chi-Squared                171227.0     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 274 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>thaw 26
+
+Fit statistic  : Chi-Squared                171227.0     using 278 bins.
+
+Test statistic : Chi-Squared                171227.0     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 273 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>thaw 28
+
+Fit statistic  : Chi-Squared                171227.0     using 278 bins.
+
+Test statistic : Chi-Squared                171227.0     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 272 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>fit
+                                   Parameters
+Chi-Squared  |beta|/N    Lvl        1:logT         18:Ar         20:Ca         26:Fe         28:Ni       31:norm
+133975       20908.8       0       6.39185       5.23239       4.64072       8.07407       6.30344   1.01157e+07
+133866       15551.2       0       6.39358       4.12497       4.14383       8.00712       6.20807   9.91355e+06
+133774       10472.3       0       6.39519       4.00151       3.92818       7.88932       6.20387   9.68689e+06
+133676       7510.59       0       6.39674       4.00029       3.83557       7.70836       6.20132   9.44901e+06
+133573       5466.05       0       6.39825       4.00014       3.80523       7.40974       6.20060   9.20535e+06
+133485       3879.58       0       6.39973       4.00006       3.80185       7.09594       6.20022   8.95862e+06
+133406       2253.5        0       6.40117       4.00002       3.80091       7.01014       6.20002   8.70970e+06
+133322       134.81        0       6.40257       4.00001       3.80041       7.00429       6.20000   8.45628e+06
+133229       1829.43       0       6.40393       4.00000       3.80015       7.00092       6.20000   8.20197e+06
+133128       2707.14       0       6.40528       4.00000       3.80002       7.00001       6.20000   7.95032e+06
+Number of trials exceeded: continue fitting? y
+133018       3802.2        0       6.40661       4.00000       3.80001       7.00001       6.20000   7.70045e+06
+132902       4246.93       0       6.40793       4.00000       3.80000       7.00000       6.20000   7.45489e+06
+132783       4193.24       0       6.40926       4.00000       3.80000       7.00000       6.20000   7.21534e+06
+132657       4555.89       0       6.41057       4.00000       3.80000       7.00000       6.20000   6.98009e+06
+132527       4455.61       0       6.41189       4.00000       3.80000       7.00000       6.20000   6.75065e+06
+132396       3996.82       0       6.41321       4.00000       3.80000       7.00000       6.20000   6.52805e+06
+132261       3999.94       0       6.41453       4.00000       3.80000       7.00000       6.20000   6.31045e+06
+132123       3659.16       0       6.41586       4.00000       3.80000       7.00000       6.20000   6.09886e+06
+131985       3016.69       0       6.41721       4.00000       3.80000       7.00000       6.20000   5.89403e+06
+131843       2844.99       0       6.41855       4.00000       3.80000       7.00000       6.20000   5.69420e+06
+Number of trials exceeded: continue fitting? y
+131470       2379.81      -1       6.43384       7.05404       3.80000       7.00000       6.20000   4.27892e+06
+130971       25537.4       0       6.43474       7.45602       3.80000       7.00000       6.20000   4.07721e+06
+130640       17677.3       0       6.43582       7.81135       3.80000       7.00000       6.20000   3.89259e+06
+130373       12775.5       0       6.43710       8.00875       3.80000       7.00000       6.20000   3.71893e+06
+130138       9806.08       0       6.43853       8.15351       3.80000       7.00000       6.20000   3.55272e+06
+126986       11715.4      -1       6.45335       8.73181       3.80000       7.00000       6.20000   2.13841e+06
+125193       37182.1      -1       6.46894       8.52020       3.80000       7.00000       6.20000   1.42550e+06
+114611       69969.3      -2       6.57042       5.16522       3.80000       8.40055       6.20000       223581.
+109069       49345.8      -1       6.60138       7.77400       3.80000       7.91842       6.20000       128288.
+106165       42507.9      -1       6.62418       7.41429       3.80000       8.28216       6.20000       93340.8
+Number of trials exceeded: continue fitting? y
+101430       53682.8      -1       6.65903       7.09281       3.80000       8.10010       6.20000       62370.2
+94878.7      52106.5      -1       6.70249       6.82433       3.80000       7.32629       6.20000       39836.9
+85532.2      49068        -1       6.75459       6.53548       3.80000       7.13724       6.20000       24937.5
+65862.4      38706.8      -2       7.03190       5.43818       3.80000       7.05688       6.20000       1766.58
+13595.4      65542.8      -1       7.17365       4.52482       3.80000       8.43964       6.20000       1067.94
+13437.9      46436.1       1       7.17351       5.37614       3.80000       8.43842       6.20000       1067.79
+12057.1      45271.2       0       7.17237       6.52005       3.80000       8.42811       6.20000       1067.90
+9263.36      37164.6       0       7.16759       6.81770       3.80000       8.37991       6.20000       1103.99
+5466.22      11788.8      -1       7.16374       6.60168       3.80000       8.22140       6.20000       1335.49
+4018.82      2252.79      -2       7.18132       6.29478       3.80000       7.96607       6.20000       1478.76
+Number of trials exceeded: continue fitting? y
+3766.99      2292.49      -3       7.19592       6.31149       3.80000       7.87086       6.20000       1393.95
+3751.99      937.391      -4       7.20114       6.35298       3.80000       7.84174       6.20000       1370.43
+3751.82      132.822      -1       7.20166       6.35300       3.80000       7.83762       6.20000       1368.95
+3751.82      92.9085       0       7.20166       6.35299       3.80000       7.83756       6.20000       1368.93
+2923.4       62.1745       1       7.20166       6.35297       6.57586       7.83755       6.27059       1368.92
+2901.18      2406.26       0       7.20147       6.34723       6.58158       7.83625       6.36850       1366.64
+2855.51      1945.64       0       7.20068       6.33764       6.62026       7.83519       7.43009       1351.85
+2538.14      4326.75      -1       7.19995       6.41851       6.69325       7.86062       7.61687       1276.72
+2475.81      367.843      -2       7.19950       6.52349       6.73980       7.89391       7.81671       1215.37
+2468.78      893.799      -3       7.19889       6.52455       6.74547       7.90196       7.82035       1208.04
+Number of trials exceeded: continue fitting? y
+2468.31      42.4034      -4       7.19861       6.52300       6.74579       7.90388       7.82342       1208.48
+2468.19      13.711       -5       7.19853       6.52251       6.74584       7.90437       7.82362       1208.75
+2468.16      3.78307      -6       7.19851       6.52237       6.74586       7.90452       7.82371       1208.82
+2468.15      1.03743      -7       7.19850       6.52233       6.74586       7.90456       7.82373       1208.84
+======================================================================
+ Variances and Principal Axes
+                 1       18       20       26       28       31
+ 1.2970E-07| -0.9974  -0.0039  -0.0074  -0.0663  -0.0263  -0.0001
+ 5.1476E-05| -0.0579  -0.0125  -0.0852   0.9695  -0.2219  -0.0001
+ 1.8917E-04|  0.0136  -0.0079  -0.9959  -0.0890  -0.0093  -0.0008
+ 5.4082E-04| -0.0299   0.7467  -0.0261   0.1534   0.6460   0.0029
+ 1.3211E-03|  0.0269   0.6650   0.0158  -0.1555  -0.7299  -0.0011
+ 7.5403E+01|  0.0000  -0.0014  -0.0007  -0.0006  -0.0027   1.0000
+----------------------------------------------------------------------
+
+========================================================================
+  Covariance Matrix
+        1           2           3           4           5           6
+   1.791e-06   9.898e-06  -2.117e-06  -1.175e-05  -3.877e-05   1.139e-03
+   9.898e-06   1.043e-03   8.123e-05  -1.377e-05  -8.778e-05  -1.090e-01
+  -2.117e-06   8.123e-05   2.256e-04   3.680e-05   1.198e-04  -5.277e-02
+  -1.175e-05  -1.377e-05   3.680e-05   1.184e-04   3.064e-04  -4.244e-02
+  -3.877e-05  -8.778e-05   1.198e-04   3.064e-04   1.474e-03  -2.021e-01
+   1.139e-03  -1.090e-01  -5.277e-02  -4.244e-02  -2.021e-01   7.540e+01
+------------------------------------------------------------------------
+
+========================================================================
+Model chisoth<1> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   chisoth    logT       K        7.19850      +/-  1.33832E-03
+   2    1   chisoth    He                  10.9000      frozen
+   3    1   chisoth    Li                  1.64000      frozen
+   4    1   chisoth    Be                  1.94000      frozen
+   5    1   chisoth    B                   3.09000      frozen
+   6    1   chisoth    C                   8.59000      frozen
+   7    1   chisoth    N                   8.00000      frozen
+   8    1   chisoth    O                   8.89000      frozen
+   9    1   chisoth    F                   4.56000      frozen
+  10    1   chisoth    Ne                  8.08000      frozen
+  11    1   chisoth    Na                  6.93000      frozen
+  12    1   chisoth    Mg                  8.15000      frozen
+  13    1   chisoth    Al                  7.04000      frozen
+  14    1   chisoth    Si                  8.10000      frozen
+  15    1   chisoth    P                   5.45000      frozen
+  16    1   chisoth    S                   7.27000      frozen
+  17    1   chisoth    Cl                  5.50000      frozen
+  18    1   chisoth    Ar                  6.52233      +/-  3.23017E-02
+  19    1   chisoth    K                   5.67000      frozen
+  20    1   chisoth    Ca                  6.74586      +/-  1.50206E-02
+  21    1   chisoth    Sc                  3.71000      frozen
+  22    1   chisoth    Ti                  5.56000      frozen
+  23    1   chisoth    V                   4.54000      frozen
+  24    1   chisoth    Cr                  6.21000      frozen
+  25    1   chisoth    Mn                  5.93000      frozen
+  26    1   chisoth    Fe                  7.90456      +/-  1.08828E-02
+  27    1   chisoth    Co                  5.46000      frozen
+  28    1   chisoth    Ni                  7.82373      +/-  3.83904E-02
+  29    1   chisoth    Cu                  4.75000      frozen
+  30    1   chisoth    Zn                  5.14000      frozen
+  31    1   chisoth    norm                1208.84      +/-  8.68346
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                 2468.15     using 278 bins.
+
+Test statistic : Chi-Squared                 2468.15     using 278 bins.
+ Null hypothesis probability of 0.00e+00 with 272 degrees of freedom
+XSPEC12>show free
+
+Free parameters defined:
+========================================================================
+Model chisoth<1> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   chisoth    logT       K        7.19850      +/-  1.33832E-03
+  18    1   chisoth    Ar                  6.52233      +/-  3.23017E-02
+  20    1   chisoth    Ca                  6.74586      +/-  1.50206E-02
+  26    1   chisoth    Fe                  7.90456      +/-  1.08828E-02
+  28    1   chisoth    Ni                  7.82373      +/-  3.83904E-02
+  31    1   chisoth    norm                1208.84      +/-  8.68346
+________________________________________________________________________
+
+
+
+
+Model-VVAPEC
+
+
+
+XSPEC12>model none
+XSPEC12>model vvapec
+
+Input parameter value, delta, min, bot, top, and max values for ...
+            6.5       0.01(     0.065)     0.0808     0.0808     68.447     68.447
+1:vvapec:kT>
+              1      -0.01(      0.01)          0          0       1000       1000
+2:vvapec:H>
+              1      -0.01(      0.01)          0          0       1000       1000
+3:vvapec:He>
+              1      -0.01(      0.01)          0          0       1000       1000
+4:vvapec:Li>
+              1      -0.01(      0.01)          0          0       1000       1000
+5:vvapec:Be>
+              1      -0.01(      0.01)          0          0       1000       1000
+6:vvapec:B>
+              1      -0.01(      0.01)          0          0       1000       1000
+7:vvapec:C>
+              1      -0.01(      0.01)          0          0       1000       1000
+8:vvapec:N>
+              1      -0.01(      0.01)          0          0       1000       1000
+9:vvapec:O>
+              1      -0.01(      0.01)          0          0       1000       1000
+10:vvapec:F>
+              1      -0.01(      0.01)          0          0       1000       1000
+11:vvapec:Ne>
+              1      -0.01(      0.01)          0          0       1000       1000
+12:vvapec:Na>
+              1      -0.01(      0.01)          0          0       1000       1000
+13:vvapec:Mg>
+              1      -0.01(      0.01)          0          0       1000       1000
+14:vvapec:Al>
+              1      -0.01(      0.01)          0          0       1000       1000
+15:vvapec:Si>
+              1      -0.01(      0.01)          0          0       1000       1000
+16:vvapec:P>
+              1      -0.01(      0.01)          0          0       1000       1000
+17:vvapec:S>
+              1      -0.01(      0.01)          0          0       1000       1000
+18:vvapec:Cl>
+              1      -0.01(      0.01)          0          0       1000       1000
+19:vvapec:Ar>
+              1      -0.01(      0.01)          0          0       1000       1000
+20:vvapec:K>
+              1      -0.01(      0.01)          0          0       1000       1000
+21:vvapec:Ca>
+              1      -0.01(      0.01)          0          0       1000       1000
+22:vvapec:Sc>
+              1      -0.01(      0.01)          0          0       1000       1000
+23:vvapec:Ti>
+              1      -0.01(      0.01)          0          0       1000       1000
+24:vvapec:V>
+              1      -0.01(      0.01)          0          0       1000       1000
+25:vvapec:Cr>
+              1      -0.01(      0.01)          0          0       1000       1000
+26:vvapec:Mn>
+              1      -0.01(      0.01)          0          0       1000       1000
+27:vvapec:Fe>
+              1      -0.01(      0.01)          0          0       1000       1000
+28:vvapec:Co>
+              1      -0.01(      0.01)          0          0       1000       1000
+29:vvapec:Ni>
+              1      -0.01(      0.01)          0          0       1000       1000
+30:vvapec:Cu>
+              1      -0.01(      0.01)          0          0       1000       1000
+31:vvapec:Zn>
+              0      -0.01(      0.01)     -0.999     -0.999         10         10
+32:vvapec:Redshift>
+              1       0.01(      0.01)          0          0      1e+20      1e+24
+33:vvapec:norm>
+
+========================================================================
+Model vvapec<1> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   vvapec     kT         keV      6.50000      +/-  0.0
+   2    1   vvapec     H                   1.00000      frozen
+   3    1   vvapec     He                  1.00000      frozen
+   4    1   vvapec     Li                  1.00000      frozen
+   5    1   vvapec     Be                  1.00000      frozen
+   6    1   vvapec     B                   1.00000      frozen
+   7    1   vvapec     C                   1.00000      frozen
+   8    1   vvapec     N                   1.00000      frozen
+   9    1   vvapec     O                   1.00000      frozen
+  10    1   vvapec     F                   1.00000      frozen
+  11    1   vvapec     Ne                  1.00000      frozen
+  12    1   vvapec     Na                  1.00000      frozen
+  13    1   vvapec     Mg                  1.00000      frozen
+  14    1   vvapec     Al                  1.00000      frozen
+  15    1   vvapec     Si                  1.00000      frozen
+  16    1   vvapec     P                   1.00000      frozen
+  17    1   vvapec     S                   1.00000      frozen
+  18    1   vvapec     Cl                  1.00000      frozen
+  19    1   vvapec     Ar                  1.00000      frozen
+  20    1   vvapec     K                   1.00000      frozen
+  21    1   vvapec     Ca                  1.00000      frozen
+  22    1   vvapec     Sc                  1.00000      frozen
+  23    1   vvapec     Ti                  1.00000      frozen
+  24    1   vvapec     V                   1.00000      frozen
+  25    1   vvapec     Cr                  1.00000      frozen
+  26    1   vvapec     Mn                  1.00000      frozen
+  27    1   vvapec     Fe                  1.00000      frozen
+  28    1   vvapec     Co                  1.00000      frozen
+  29    1   vvapec     Ni                  1.00000      frozen
+  30    1   vvapec     Cu                  1.00000      frozen
+  31    1   vvapec     Zn                  1.00000      frozen
+  32    1   vvapec     Redshift            0.0          frozen
+  33    1   vvapec     norm                1.00000      +/-  0.0
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                171226.9     using 278 bins.
+
+Test statistic : Chi-Squared                171226.9     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 276 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>thaw 19
+
+Fit statistic  : Chi-Squared                171226.9     using 278 bins.
+
+Test statistic : Chi-Squared                171226.9     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 275 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>thaw 21
+
+Fit statistic  : Chi-Squared                171226.9     using 278 bins.
+
+Test statistic : Chi-Squared                171226.9     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 274 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>thaw 27
+
+Fit statistic  : Chi-Squared                171226.9     using 278 bins.
+
+Test statistic : Chi-Squared                171226.9     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 273 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>thaw 29
+
+Fit statistic  : Chi-Squared                171226.9     using 278 bins.
+
+Test statistic : Chi-Squared                171226.9     using 278 bins.
+ Null hypothesis probability of 0.0e+00 with 272 degrees of freedom
+ Current data and model not fit yet.
+XSPEC12>fit
+                                   Parameters
+Chi-Squared  |beta|/N    Lvl          1:kT         19:Ar         21:Ca         27:Fe         29:Ni       33:norm
+86427.3      541.867      -1       2.67234       182.818       101.043      0.972632      0.248195   2.60249e+06
+51043.9      1148         -2       2.57429       79.6856       7.11304       2.12823       7.26580   4.24341e+06
+39089.8      818.082      -3       1.63060       15.1379       3.77261      0.845466       2.35150   1.57533e+07
+15869.9      8193.53      -4       1.44712       5.51670      0.941497      0.152932       6.64608   4.59231e+07
+3198.05      3486.22      -5       1.44664     0.0718277       1.79945      0.856646       11.1880   5.25521e+07
+2774.76      754.36       -6       1.40046      0.567853       1.66730      0.868787       14.8687   5.52608e+07
+2765.64      144.133      -7       1.39108      0.541356       1.68089      0.906359       16.4929   5.57606e+07
+2764.74      11.3213      -8       1.38805      0.531687       1.68502      0.920484       17.1504   5.58452e+07
+2764.63      3.42531      -9       1.38690      0.528052       1.68637      0.925434       17.3803   5.58813e+07
+2764.61      1.81063     -10       1.38648      0.526741       1.68688      0.927245       17.4633   5.58947e+07
+Number of trials exceeded: continue fitting? y
+2764.61      0.753366    -11       1.38632      0.526260       1.68707      0.927909       17.4936   5.58996e+07
+======================================================================
+ Variances and Principal Axes
+                 1       19       21       27       29       33
+ 1.4134E-06|  0.9961   0.0102   0.0066   0.0879   0.0019   0.0000
+ 2.2963E-04|  0.0869   0.0453   0.0451  -0.9941   0.0101   0.0000
+ 1.8935E-03|  0.0148  -0.9967  -0.0645  -0.0471  -0.0059  -0.0000
+ 3.0561E-03|  0.0095   0.0666  -0.9969  -0.0413   0.0056  -0.0000
+ 1.2467E+00| -0.0027  -0.0068   0.0047   0.0098   0.9999   0.0000
+ 1.4176E+11|  0.0000   0.0000   0.0000  -0.0000   0.0000  -1.0000
+----------------------------------------------------------------------
+
+========================================================================
+  Covariance Matrix
+        1           2           3           4           5           6
+   1.881e-05   7.369e-05  -1.406e-06  -5.908e-05  -3.142e-03  -9.193e+02
+   7.369e-05   2.926e-03   4.443e-04  -6.244e-05  -5.741e-03  -1.172e+04
+  -1.406e-06   4.443e-04   3.402e-03   1.501e-04   7.422e-03  -6.832e+03
+  -5.908e-05  -6.244e-05   1.501e-04   3.593e-04   1.211e-02   5.992e+02
+  -3.142e-03  -5.741e-03   7.422e-03   1.211e-02   1.254e+00  -3.257e+04
+  -9.193e+02  -1.172e+04  -6.832e+03   5.992e+02  -3.257e+04   1.418e+11
+------------------------------------------------------------------------
+
+========================================================================
+Model vvapec<1> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   vvapec     kT         keV      1.38632      +/-  4.33730E-03
+   2    1   vvapec     H                   1.00000      frozen
+   3    1   vvapec     He                  1.00000      frozen
+   4    1   vvapec     Li                  1.00000      frozen
+   5    1   vvapec     Be                  1.00000      frozen
+   6    1   vvapec     B                   1.00000      frozen
+   7    1   vvapec     C                   1.00000      frozen
+   8    1   vvapec     N                   1.00000      frozen
+   9    1   vvapec     O                   1.00000      frozen
+  10    1   vvapec     F                   1.00000      frozen
+  11    1   vvapec     Ne                  1.00000      frozen
+  12    1   vvapec     Na                  1.00000      frozen
+  13    1   vvapec     Mg                  1.00000      frozen
+  14    1   vvapec     Al                  1.00000      frozen
+  15    1   vvapec     Si                  1.00000      frozen
+  16    1   vvapec     P                   1.00000      frozen
+  17    1   vvapec     S                   1.00000      frozen
+  18    1   vvapec     Cl                  1.00000      frozen
+  19    1   vvapec     Ar                  0.526260     +/-  5.40950E-02
+  20    1   vvapec     K                   1.00000      frozen
+  21    1   vvapec     Ca                  1.68707      +/-  5.83286E-02
+  22    1   vvapec     Sc                  1.00000      frozen
+  23    1   vvapec     Ti                  1.00000      frozen
+  24    1   vvapec     V                   1.00000      frozen
+  25    1   vvapec     Cr                  1.00000      frozen
+  26    1   vvapec     Mn                  1.00000      frozen
+  27    1   vvapec     Fe                  0.927909     +/-  1.89555E-02
+  28    1   vvapec     Co                  1.00000      frozen
+  29    1   vvapec     Ni                  17.4936      +/-  1.11980
+  30    1   vvapec     Cu                  1.00000      frozen
+  31    1   vvapec     Zn                  1.00000      frozen
+  32    1   vvapec     Redshift            0.0          frozen
+  33    1   vvapec     norm                5.58996E+07  +/-  3.76506E+05
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                 2764.61     using 278 bins.
+
+Test statistic : Chi-Squared                 2764.61     using 278 bins.
+ Null hypothesis probability of 0.00e+00 with 272 degrees of freedom
+XSPEC12>show free
+
+Free parameters defined:
+========================================================================
+Model vvapec<1> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   vvapec     kT         keV      1.38632      +/-  4.33730E-03
+  19    1   vvapec     Ar                  0.526260     +/-  5.40950E-02
+  21    1   vvapec     Ca                  1.68707      +/-  5.83286E-02
+  27    1   vvapec     Fe                  0.927909     +/-  1.89555E-02
+  29    1   vvapec     Ni                  17.4936      +/-  1.11980
+  33    1   vvapec     norm                5.58996E+07  +/-  3.76506E+05
+________________________________________________________________________
